@@ -1,0 +1,180 @@
+#TopBar {
+  display: flex;
+  width: 70%;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+
+li {
+  list-style: none;
+}
+
+#TopBar input {
+  margin-top: 5px;
+  width: 32rem;
+  height: 2rem;
+  border: 0;
+  font-size: 1.3rem;
+}
+#TopBar h1 {
+  cursor: pointer;
+}
+#TopBar h3 {
+  cursor: pointer;
+}
+input:focus {
+  outline: none;
+
+}
+
+#searchBar {
+  margin-top: 20px;
+  display: inline-block;
+  width: 40rem;
+  height: 3rem;
+  border-radius: 15px;
+  border: 2px solid rgba(10, 129, 226, 0.651);
+}
+
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Song Myung", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.2rem;
+}
+
+select:focus {
+  border-color: blue;
+  outline: none;
+  box-shadow: 5px 3px 7px rgba(60, 85, 255, 0.5);
+}
+
+.dropDown {
+  display: none;
+  position: relative;
+  top: 0;
+  left: 0;
+  background-color: white;
+  list-style: none;
+  padding: 0;
+  width: 150px;
+}
+
+.dropDown li {
+  margin:10px 0px;
+  width: 120px;
+  cursor: pointer;
+}
+
+.dropDown li:hover {
+  background-color: #f0f0f0;
+}
+#navBar > li:hover .dropDown {
+  display: block;
+}
+select {
+  width: 100px;
+  padding: 10px;
+  font-size: 16px;
+  height: 2.7rem;
+  border: 0px;
+  position: relative;
+  top: -0px;
+  border-radius: 15px;
+  color: #333;
+  appearance: none;
+}
+
+
+#navBar {
+  display: flex;
+  width: 70%;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+.nav-hr {
+  color: blue;
+  width: 100%;
+  border: 1px solid rgba(10, 129, 226, 0.651);
+  margin-top: 20px;
+}
+hr {
+  border: 1px solid gray;
+  width: 100%;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+#slider-wrap {
+  width: 575px;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  margin: 0 50px;
+}
+#slider-items {
+  display: flex;
+}
+
+.slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  flex: 0 0 100%;
+  width: 400px;
+  height: 400px;
+}
+.lBtn {
+  position:relative;
+  font-size: 50px;
+  z-index: 100;
+  width: 50px;
+  position: relative;
+  top:220px;
+  left:150px;
+  cursor: pointer;
+  color: white;
+}
+.rBtn {
+  position:relative;
+  font-size: 50px;
+  z-index: 100;
+  width: 50px;
+  position: relative;
+  top:220px;
+  left:33%;
+  cursor: pointer;
+  color: white;
+}
+#MainContainer {
+  display: flex;
+}
+#notice {
+  display: flex;
+}
+#notice button{
+  position: relative;
+  top:20px;
+  margin-left: 10px;
+  width:40px;
+  height:40px;
+  border-radius: 50%;
+  border:1px solid white;
+  cursor: pointer;
+}
+#notice button:hover {
+  box-shadow: 2px 2px 5px black;
+}
+#noticeList {
+  display: flex;
+  flex-direction: column;
+}
+#noticeList li {
+  margin-top: 15px;
+}
