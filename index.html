@@ -1,101 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>도서 관리 페이지</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Song+Myung&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>도서 관리 페이지</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Song+Myung&display=swap"
+    rel="stylesheet" />
+</head>
 
-  <body>
-    <header>
-      <div id="TopBar">
-        <h1>10012</h1>
-        <div id="searchBar">
-          <select name="" id="">
-            <option value="1">통합검색</option>
-            <option value="2">저자명</option>
-            <option value="3">도서명</option>
-          </select>
-          <input type="text" placeholder="도서명 또는 저자명을 입력하세요" />
-        </div>
-        <h3>회원가입</h3>
-        <h3>로그인</h3>
+<body>
+  <header>
+    <div id="TopBar">
+      <h1>10012</h1>
+      <div id="searchBar">
+        <select name="" id="">
+          <option value="1">통합검색</option>
+          <option value="2">저자명</option>
+          <option value="3">도서명</option>
+        </select>
+        <input type="text" placeholder="도서명 또는 저자명을 입력하세요" />
+        <img src="./search.png" alt="">
       </div>
-      <nav>
-        <ul id="navBar">
-          <li>
-            <a href="">도서검색</a>
-            <ul class="dropDown">
-              <li>통합 검색</li>
-              <li>저자명 검색</li>
-              <li>도서명 검색</li>
-            </ul>
-          </li>
-          <li>
-            <a href="">추천 도서</a>
-            <ul class="dropDown">
-              <li>인기도서</li>
-              <li>신작도서</li>
-              <li>취향별도서</li>
-            </ul>
-          </li>
-          <li>
-            <a href="">대출 관리</a>
-            <ul class="dropDown">
-              <li>대출가능 여부</li>
-              <li>대출/반납</li>
-              <li>대출이력</li>
-            </ul>
-          </li>
-          <li>
-            <a href="">예약 관리</a>
-            <ul class="dropDown">
-              <li>도서 예약</li>
-              <li>예약 확인/취소</li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
-      <hr class="nav-hr" />
-    </header>
-    <main>
-      <section>
-        <div id="MainContainer">
-          <div id="slider-wrap">
-            <span class="lBtn">&lt;</span>
-            <span class="rBtn">&gt;</span>
-            <div id="slider-items">
-              <img src="./1.jpg" alt="내 이미지" class="slide" />
-              <img src="./2.jpg" alt="내 이미지" class="slide" />
-              <img src="./3.jpg" alt="내 이미지" class="slide" />
-              <img src="./4.jpg" alt="내 이미지" class="slide" />
-            </div>
-          </div>
-          <div>
-            <div id="notice">
-              <h2>공지사항</h2>
-              <button class="plusBtn">+</button>
-            </div>
-            <div id="noticeList"></div>
-          </div>
-          <div id ="recoContainer">
-            <div id="recomend">
-              <h2>추천 도서</h2>
-              <button class="plusBtn">+</button>
-            </div>
-            <div id="recoBook">
-            </div>
+      <h3 onclick="location.href='./pages/signup.html'">회원가입</h3>
+      <h3 onclick="location.href='./pages/login.html'">로그인</h3>
+    </div>
+    <nav>
+      <ul id="navBar">
+        <li>
+          <a href="">도서검색</a>
+          <ul class="dropDown">
+            <li>통합 검색</li>
+            <li>저자명 검색</li>
+            <li>도서명 검색</li>
+          </ul>
+        </li>
+        <li>
+          <a href="">추천 도서</a>
+          <ul class="dropDown">
+            <li>인기도서</li>
+            <li>신작도서</li>
+            <li>취향별도서</li>
+          </ul>
+        </li>
+        <li>
+          <a href="">대출 관리</a>
+          <ul class="dropDown">
+            <li>대출가능 여부</li>
+            <li>대출/반납</li>
+            <li>대출이력</li>
+          </ul>
+        </li>
+        <li>
+          <a href="">예약 관리</a>
+          <ul class="dropDown">
+            <li>도서 예약</li>
+            <li>예약 확인/취소</li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <hr class="nav-hr" />
+  </header>
+  <main>
+    <section>
+      <div id="MainContainer">
+        <div id="slider-wrap">
+          <span class="lBtn">&lt;</span>
+          <span class="rBtn">&gt;</span>
+          <div id="slider-items">
+            <img src="./1.jpg" alt="내 이미지" class="slide" />
+            <img src="./2.jpg" alt="내 이미지" class="slide" />
+            <img src="./3.jpg" alt="내 이미지" class="slide" />
+            <img src="./4.jpg" alt="내 이미지" class="slide" />
           </div>
         </div>
-      </section>
-    </main>
-    <script src="index.js"></script>
-  </body>
+        <div id="notice-wrap">
+          <div id="notice">
+            <h2>공지사항</h2>
+            <button class="plusBtn">+</button>
+          </div>
+          <div id="noticeList"></div>
+        </div>
+        <div id="reco-wrap">
+          <div id="recomend">
+            <h2>추천 도서</h2>
+            <button class="plusBtn">+</button>
+          </div>
+          <div id="recoBook">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div id="cate-container">
+        <h2>카테고리별 인기항목</h2>
+        <div class="cate-wrap">
+          <h3>국내 도서</h3>
+        </div>
+        <div class="cate-wrap">
+          <h3>해외 도서</h3>
+        </div>
+        <div class="cate-wrap">
+          <h3>자기계발서</h3>
+        </div>
+      </div>
+
+    </section>
+  </main>
+  <script src="index.js"></script>
+</body>
+
 </html>
