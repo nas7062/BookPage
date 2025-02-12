@@ -131,24 +131,24 @@ a {
   height: 400px;
 }
 .lBtn {
-  position:relative;
+  position:absolute;
   font-size: 50px;
   z-index: 100;
   width: 50px;
   position: relative;
   top:220px;
-  left:150px;
+  left:0;
   cursor: pointer;
   color: white;
 }
 .rBtn {
-  position:relative;
+  position:absolute;
   font-size: 50px;
   z-index: 100;
   width: 50px;
   position: relative;
   top:220px;
-  left:33%;
+  left:90%;
   cursor: pointer;
   color: white;
 }
@@ -158,7 +158,7 @@ a {
 #notice {
   display: flex;
 }
-#notice button{
+.plusBtn{
   position: relative;
   top:20px;
   margin-left: 10px;
@@ -168,8 +168,9 @@ a {
   border:1px solid white;
   cursor: pointer;
 }
-#notice button:hover {
-  box-shadow: 2px 2px 5px black;
+.plusBtn:hover {
+  box-shadow: 2px 2px 5px gray;
+  transform: scale(1.1);
 }
 #noticeList {
   display: flex;
@@ -177,4 +178,26 @@ a {
 }
 #noticeList li {
   margin-top: 15px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+#recomend {
+  display: flex;
+}
+#recoBook {
+  display:flex;
+  width:200px;
+  text-align: center;
+  gap: 10px;
+}
+#recoBook p{
+  margin:0;
+}
+#recoBook img {
+  width:200px;
+  height:250px;
+  
+}
+#recoContainer {
+  margin-left: 80px;
 }

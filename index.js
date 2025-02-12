@@ -30,3 +30,18 @@ noticeList.forEach((item) => {
   let line = document.createElement("hr");
   notice.appendChild(line);
 })
+const recoList = [["./5.jpg", "오늘은 그냥 쉬는날"],
+  ["./6.jpg",
+  "혼자서 본 영화"]];
+
+const reco = document.querySelector('#recoBook');
+recoList.forEach((item) => {
+  let dv = document.createElement("div"); 
+  let img = document.createElement("img"); 
+  img.src = item[0]; 
+  let p = document.createElement("p"); 
+  p.innerHTML = item[1]; 
+  dv.appendChild(img); 
+  dv.appendChild(p); 
+  reco.appendChild(dv); 
+});
